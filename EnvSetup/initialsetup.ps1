@@ -13,6 +13,7 @@ choco install git
 choco install poshgit
 choco install git-credential-winstore
 choco install pester
+choco install ISEPester
 
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files (x86)\Git\bin" , [System.EnvironmentVariableTarget]::Machine )
 
