@@ -2,8 +2,14 @@
 $sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path).Replace(".Tests.", ".")
 . "$here\$sut"
 
+$logdir = "C:\kronometrix"
+
 Describe "sysrec" {
-    It "does something useful" {
-        $true | Should Be $false
+    It "can write files" {
+        test-path "$logdir\sysrec" | Should Be $true
     }
+}
+
+Describe "get-epoc" {
+
 }
