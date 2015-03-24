@@ -54,11 +54,6 @@ if (!( Test-Path -Path ".\$module\$app*" )) {
 }
 
 ## Open module in ISE
-if ($psise) {
-    psedit ".\$module\$app.ps1"
-    psedit ".\$module\$app.Tests.ps1"
-} else {
     ise ".\$module\$app.ps1"
     ise ".\$module\$app.Tests.ps1"
-} 
 
