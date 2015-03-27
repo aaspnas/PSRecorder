@@ -3,7 +3,7 @@ $sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path).Replace(".Tests.", ".")
 . "$here\$sut"
 
 Describe "hdwrec" {
-    It "does something useful" {
-        $true | Should Be $false
+    It "Displays help" {
+        (hdwrec -h)  | Should Be $true
     }
 }
