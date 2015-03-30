@@ -11,7 +11,7 @@ there exist some minor differencies:
 * Command has a .ps1 extenion as custom in PowerShell
 * ...
 
-hwrec.ps1 contains the recording unit for hwrec
+hdwrec.ps1 contains the recording unit for hdwrec
 sysrec.ps1 contains the sysrec recording unit
 common.ps1 contain common functionality used by all recorders
 
