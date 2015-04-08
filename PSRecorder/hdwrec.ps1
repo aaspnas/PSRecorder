@@ -15,8 +15,7 @@ function hdwrec {
     if ($h) {return display-helptxt}
     if ($v) {return display-versiontxt}
 
-    $stat = create-logdir
-    $logfile = "$logdir\hdwrec.raw"
+
     while ($continue) {
         if ($count) {
             $iteration++
@@ -62,3 +61,7 @@ function hdwrec {
 function display-helptxt {"Not implemented"}
 function display-versiontxt {"1.0"}
 
+
+$stat = create-logdir
+$logfile = "$logdir\hdwrec.raw"
+hdwrec 60 0 | Out-File -Encoding ascii -Append $logfile
