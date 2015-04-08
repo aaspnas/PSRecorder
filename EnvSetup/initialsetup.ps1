@@ -14,6 +14,7 @@ choco install poshgit
 choco install git-credential-winstore
 choco install pester
 choco install ISEPester
+choco install NSSM
 
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files (x86)\Git\bin" , [System.EnvironmentVariableTarget]::Machine )
 
